@@ -7,7 +7,8 @@ python dice.py
 
 Pain:
 
-expired user notification is pretty mysterious
+have to make a new socket when zmq.IDENTITY changes. this was confusing
+notification for "game over because somebody ran out of time" is pretty mysterious
 unclear who has next action after round ends
 
 
