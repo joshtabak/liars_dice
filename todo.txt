@@ -1,0 +1,15 @@
+Installation:
+
+sudo easy_install pyzmq
+sudo easy_install trueskill
+python dice.py
+
+
+Pain:
+
+expired user notification is pretty mysterious
+unclear who has next action after round ends
+
+
+client todo:
+bot registration is clunky (each name only plays 1 game)

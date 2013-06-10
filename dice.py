@@ -5,7 +5,7 @@ import time
 import trueskill
 import os
 
-GAME_CLOCK = 10
+GAME_CLOCK = 10000
 SAVE_FILE = 'bots.dat'
 START_DICE = 5
 DICE_SIDES = 6
@@ -211,9 +211,12 @@ class Server:
     def run(self):
         self.scan_games()
         bot_id = self.socket.recv()
-        self.socket.recv()
+        print("bot_id: ", bot_id)
+        z = self.socket.recv()
+        print("blank?: ", z)
         msg = self.socket.recv()
-        
+        print("msg: ", msg)
+
         if msg == 'register':
             if ',' in bot_id or bot_id in self.bots.values():
                 self.send(bot_id, "0")
